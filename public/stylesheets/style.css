@@ -49,6 +49,12 @@ h1 {
   background-color: #007dfa;
   color: white;
   font-size: 2rem;
+  margin-top: 18px;
+}
+
+.username-navbar {
+  color: white;
+  font-size: 0.8rem;
 }
 
 .title {
