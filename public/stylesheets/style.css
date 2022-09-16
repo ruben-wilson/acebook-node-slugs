@@ -404,12 +404,13 @@ input#email {
   display: flex;
   justify-content: center;
   align-items: center;
-/* #myImg {
+  /* #myImg {
   border-radius: 50%;
   width: 150px;
   height: 150px;
   object-fit: contain;
 } */
+}
 
 .picture-text {
   color: white;
