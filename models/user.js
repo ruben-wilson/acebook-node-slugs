@@ -8,6 +8,7 @@ const UserSchema = new mongoose.Schema({
   email: { type: String, unique: true },
   password: String,
   friends: [{ type: mongoose.Schema.Types.ObjectId, ref: "User" }],
+  img: String
 });
 
 const User = mongoose.model("User", UserSchema);

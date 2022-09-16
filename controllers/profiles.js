@@ -1,4 +1,8 @@
 const User = require("../models/user");
+const { ImgurClient } = require('imgur');
+
+
+const client = new ImgurClient({ clientId: 'c210e55e116acae' });
 
 const ProfilePage = {
 	LoadFromProfileButton: (req, res) => {
@@ -41,11 +45,36 @@ const ProfilePage = {
 							fetchUrl: "/friends/requests/new/" + profileUsername,
 							displayAddFriendButton: !ownProfile && !isAFriend,
 							isAFriend: isAFriend,
+              url: user.img,
+              ownProfile: ownProfile
 						});
 					}
 				}
 			});
 	},
+
+  Find: (req, res) => {
+    const profileUsername = req.body.searchBar;
+    res.redirect(`/profiles/${profileUsername}`);
+  },
+
+ Image: async(req, res) => {
+    try {
+      console.log("here")
+      const image_data = req.files.image.data;
+      const username = req.session.user.username
+      const response = await client.upload({
+        image: image_data,
+        type: 'buffer',
+      });
+      const url = response.data.link
+      await User.findOneAndUpdate({username: username}, {img: url} )
+
+      res.redirect(`/profiles/${username}`);
+  } catch (err) {
+      res.status(500)
+  }
+ },
 };
 
 module.exports = ProfilePage;
