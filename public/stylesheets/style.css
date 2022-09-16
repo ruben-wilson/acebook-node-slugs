@@ -323,7 +323,7 @@ li {
   text-align: center;
   min-height: 100vh;
   flex-direction: column;
-  margin-top: -68rem;
+  /* margin-top: -68rem; */
 }
 
 #new-user-form {
@@ -340,15 +340,15 @@ li {
   margin-top: 1rem;
 }
 
-.signup-title {
+/* .signup-title {
   display: flex;
   justify-content: center;
   align-items: center;
   text-align: center;
   min-height: 100vh;
   flex-direction: column;
-  /* margin-top: -24rem; */
-}
+
+} */
 
 #first-name,
 #last-name,
@@ -370,7 +370,7 @@ input#email {
   margin-bottom: 0;
 }
 
-#signup-green-button {
+#signup {
   background: #0eaf00;
   color: white;
   height: 3rem;
