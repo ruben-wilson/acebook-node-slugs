@@ -68,6 +68,7 @@ app.use((req, res, next) => {
 		res.locals.loggedIn = false;
 	} else {
 		res.locals.loggedIn = true;
+		res.locals.currentUser = req.session.user.username;
 	}
 	next();
 });
