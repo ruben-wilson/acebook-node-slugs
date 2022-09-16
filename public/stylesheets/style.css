@@ -83,7 +83,6 @@ h1 {
   text-align: center;
   min-height: 100vh;
   flex-direction: column;
-  margin-left: -242px;
   margin-top: -13rem;
 }
 
@@ -315,4 +314,82 @@ li {
 #submit-comment {
   align-content: center;
   margin-top: 20px;
+}
+
+#new-user-form-div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  min-height: 100vh;
+  flex-direction: column;
+  margin-top: -68rem;
+}
+
+#new-user-form {
+  border-style: solid;
+  border-color: #007dfa;
+  padding: 1rem;
+  border-radius: 2rem;
+  width: 23rem;
+  margin-top: 1rem;
+}
+
+.signup-form {
+  margin-bottom: 0rem;
+  margin-top: 1rem;
+}
+
+.signup-title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  min-height: 100vh;
+  flex-direction: column;
+  margin-top: -24rem;
+}
+
+#first-name,
+#last-name,
+#username,
+#password {
+  border-color: #007dfa;
+  border-radius: 0.25rem;
+  height: 2.25rem;
+  width: 329px;
+  font-size: 1.25rem;
+}
+
+input#email {
+  border-color: #007dfa;
+  border-radius: 0.25rem;
+  height: 2.25rem;
+  width: 329px;
+  font-size: 1.25rem;
+  margin-bottom: 0;
+}
+
+#signup {
+  background: #0eaf00;
+  color: white;
+  height: 3rem;
+  font-size: 1.5rem;
+  width: 7.5rem;
+  border-radius: 0.5rem;
+}
+
+.slogan {
+  margin-top: 0;
+}
+
+.sign-up-title {
+  margin-bottom: 0.5rem;
+}
+
+.title-container {
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+  align-items: flex-start;
 }
