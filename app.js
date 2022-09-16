@@ -5,6 +5,7 @@ const cookieParser = require("cookie-parser");
 const logger = require("morgan");
 const session = require("express-session");
 const methodOverride = require("method-override");
+const fileUpload = require("express-fileupload");
 
 const homeRouter = require("./routes/home");
 const postsRouter = require("./routes/posts");
@@ -29,6 +30,8 @@ app.use(cookieParser());
 app.use(express.static(path.join(__dirname, "public")));
 
 app.use(methodOverride("_method"));
+app.use(fileUpload());
+
 
 app.use(
 	session({
@@ -65,6 +68,7 @@ app.use((req, res, next) => {
 		res.locals.loggedIn = false;
 	} else {
 		res.locals.loggedIn = true;
+		res.locals.currentUser = req.session.user.username;
 	}
 	next();
 });

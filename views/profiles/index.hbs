@@ -1,4 +1,22 @@
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>{{title}}</title>
+  <link rel="stylesheet" href="/stylesheets/style.css" />
+</head>
 <div class="profile-container">
+      <div class="circular-portrait">
+      <img id="myImg" src={{url}} />
+    </div>
+    <br />
+    {{#if ownProfile}}
+    <div>
+      <form action="/profiles/image" enctype="multipart/form-data" method="POST">
+        <input class="picture-text" name="image" type="file" />
+        <input type="submit" value="upload" />
+       </form>
+    </div>
+    {{/if}}
   <h1 id="profile-header">{{profileUsername}}'s profile
     <br />
     <br />
