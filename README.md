@@ -10,8 +10,6 @@ A project where it mimicks Facebook where users can
 - visit their own or friends' profile page
 - upload a profile picture
 
-This is a Node.js template for the Acebook engineering project.
-
 It uses:
 
 - [Express](https://expressjs.com/) web framework for Node.js.
