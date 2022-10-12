@@ -1,6 +1,14 @@
 # Acebook
 
-[Link to Trello board](https://trello.com/b/kypjXwKu/project-acebook)
+A project where it mimicks Facebook where users can
+- signup, sign in and log out
+- add a friend
+- see a timeline of their own and friends' messages
+- post a message and comment on those messages
+- like and unlike a message or comment dynamically
+- delete their messages and comments
+- visit their own or friends' profile page
+- upload a profile picture
 
 This is a Node.js template for the Acebook engineering project.
 
@@ -16,7 +24,7 @@ It uses:
 
 ## Card wall
 
-REPLACE THIS TEXT WITH A LINK TO YOUR CARD WALL
+[Link to Trello board](https://trello.com/b/kypjXwKu/project-acebook)
 
 ## Quickstart
 
