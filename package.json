@@ -13,7 +13,7 @@
     "test:integration": "cypress run"
   },
   "engines": {
-    "node": ">=6.9.0"
+    "node": ">=16.16.0"
   },
   "dependencies": {
     "bootstrap": "^5.2.1",
